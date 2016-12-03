@@ -4,6 +4,8 @@ var main_router = require("./routers/main.js")(app);
 var main_router = require("./routers/about_sarafood.js")(app);
 var main_router = require("./routers/about_sarafresh.js")(app);
 var main_router = require("./routers/delivery_process.js")(app);
+var main_router = require("./routers/group_order.js")(app);
+var main_router = require("./routers/menus.js")(app);
 
 app.set('port', process.env.PORT || 3050);
 

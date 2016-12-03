@@ -1,7 +1,7 @@
 module.exports = function(app){
-  app.get('/delivery_process',function(req,res){
+  app.get('/menus',function(req,res){
     // console.log("main.js executed");
-    res.render("layout.ejs",{page:"delivery_process"});
+    res.render("layout.ejs",{page:"menus"});
     // res.send("about.js executed");
   });
 }

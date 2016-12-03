@@ -32,10 +32,19 @@
     <li><a href="/delivery_process">
         <p>배송과정</p>
       </a></li>
-    <li><a href="">
+    <li><a href="/menus">
         <p>메뉴소개</p>
+        <div class="submenu">
+          <ul>
+            <li><a href="/menus#meal_big">수제 일반 도시락 (대)</a></li>
+            <li><a href="/menus#meal_small">수제 일반 도시락 (소)</a></li>
+            <li><a href="/menus#meal_child">수제 어린이 도시락</a></li>
+            <li><a href="/menus#salad">수제 샐러드 도시락</a></li>
+            <li><a href="/menus#mix">수제 MIX 도시락</a></li>
+          </ul>
+        </div>
       </a></li>
-    <li><a href="">
+    <li><a href="/group_order">
         <p>단체주문</p>
       </a></li>
   </ul>
@@ -62,13 +71,19 @@
     case 'about_sarafood': %>
       <% include ./partials/about_sarafood.ejs %>
       <% break;
+    case 'group_order': %>
+      <% include ./partials/group_order.ejs %>
+      <% break;
+    case 'menus': %>
+      <% include ./partials/menus.ejs %>
+      <% break;
    } %>
   <!-- 페이지별로 다른 내용 들어감 -->
 
 <div class="footer-wrap">
   <footer>
     <span>SARA FRESH</span>
-    <section class="company-info">
+    <div class="company-info">
       <ul>
         <li>상호명 : 소울커넥션컴퍼니</li>
         <li>대표 : 김준수, 송영진, 우정훈</li>
@@ -81,7 +96,7 @@
         <li>사업장 소재지 : 서울특별시 광진구 중곡동</li>
         <li>Copyright@SARA FRESH All Rights Reserved </li>
       </ul>
-    </section>
+    </div>
   </footer>
 </div>
 
