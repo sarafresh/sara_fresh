@@ -1,4 +1,71 @@
 html {
   background-color: gray; }
 
+li {
+  list-style: none; }
+
+ul {
+  padding-left: 0; }
+
+a {
+  text-decoration: none; }
+
+.readable-hidden {
+  position: absolute;
+  left: -9999px; }
+
+.red {
+  color: red; }
+
+.green {
+  color: #57aa4a; }
+
+.yellow {
+  color: #e3a326; }
+
+.header-wrap {
+  border-bottom: 1px solid #68c110; }
+
+.footer-wrap {
+  border-top: 1px solid #68c110; }
+
+.sara-fresh-logo {
+  height: 100%;
+  float: left; }
+
+.slogan {
+  margin-top: 20px;
+  margin-bottom: 0; }
+
+.content > nav {
+  background-color: #68c110;
+  position: relative; }
+
+.page-link > p {
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: auto;
+  color: white; }
+
+.page-link {
+  box-sizing: border-box;
+  border-bottom: 2px solid white; }
+
+.menu-sub {
+  width: 180px;
+  height: 90px;
+  position: absolute;
+  left: 200px;
+  top: 320px;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid gray; }
+
+.social-links {
+  padding-left: 20px; }
+
+main img {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */

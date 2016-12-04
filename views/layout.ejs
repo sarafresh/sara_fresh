@@ -4,53 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- <link rel="stylesheet" href="/public/styles/initiate/normalize.css"> -->
+  <link rel="stylesheet" href="/public/styles/initiate/reset.css">
+  <link rel="stylesheet" href="/public/styles/grid.css">
   <link rel="stylesheet" href="/public/styles/style.css">
-  <title>SARA FRESH - 아침식사 새벽배송 대표 브랜드</title>
+  <title>SARA FRESH 아침식사 새벽배송</title>
 </head>
 <body>
 
 <div class="header-wrap">
 <header>
   <a href="/">
-  <img src="/public/resources/images/logo/sarafood_logo@0,5x.png" alt="사라 프레쉬 로고" class="logo">
-  <p class="slogan">아침식사 새벽배송 대표 브랜드</p>
+  <div class="logo-title">
+    <img src="/public/resources/images/logo/sarafood_logo@0,5x.png"
+    alt="사라 프레쉬 로고" class="sara-fresh-logo">
+    <p class="slogan">아침식사 새벽배송 대표 브랜드</p>
+  </div>
   <h1 class="sarafresh">SARA FRESH<br>사라 프레쉬</h1>
   </a>
-  <img src="/public/resources/images/img/naver_search.png" alt="네이버에 검색해보세요" class="search-banner">
+  <img src="/public/resources/images/img/naver_search.png"
+  alt="네이버에 검색해보세요" class="search-banner">
 </header>
 </div>
 
+<div class="content-wrap">
+<div class="content">
 <nav>
   <h2 class="readable-hidden">페이지 목록 링크</h2>
   <ul>
-    <li><a href="/about_sarafood">
+    <li><a class="page-link" href="/about_sarafood">
         <p>SARA FOOD 소개</p>
       </a></li>
-    <li><a href="/about_sarafresh">
+    <li><a class="page-link" href="/about_sarafresh">
         <p>SARA FRESH 소개</p>
       </a></li>
-    <li><a href="/delivery_process">
+    <li><a class="page-link" href="/delivery_process">
         <p>배송과정</p>
       </a></li>
-    <li><a href="/menus">
+    <li><a class="page-link" href="/menus">
         <p>메뉴소개</p>
-        <div class="submenu">
-          <ul>
-            <li><a href="/menus#meal_big">수제 일반 도시락 (대)</a></li>
-            <li><a href="/menus#meal_small">수제 일반 도시락 (소)</a></li>
-            <li><a href="/menus#meal_child">수제 어린이 도시락</a></li>
-            <li><a href="/menus#salad">수제 샐러드 도시락</a></li>
-            <li><a href="/menus#mix">수제 MIX 도시락</a></li>
-          </ul>
-        </div>
       </a></li>
-    <li><a href="/group_order">
+    <li><a class="page-link" href="/group_order">
         <p>단체주문</p>
       </a></li>
+    <li class="menu-sub">
+      <ul>
+        <li><a href="/menus#meal_big">▶수제 일반 도시락 (대)</a></li>
+        <li><a href="/menus#meal_small">▶수제 일반 도시락 (소)</a></li>
+        <li><a href="/menus#meal_child">▶수제 어린이 도시락</a></li>
+        <li><a href="/menus#salad"><span class="green">▶</span>수제 샐러드 도시락</a></li>
+        <li><a href="/menus#mix"><span class="yellow">▶</span>수제 MIX 도시락</a></li>
+      </ul>
+    </li>
   </ul>
   <section>
     <h2 class="readable-hidden">소셜서비스 링크</h2>
-    <ul>
+    <ul class="social-links">
       <li><a href="">SARA FRESH 인스타그램</a></li>
       <li><a href="">SARA FRESH 페이스북</a></li>
       <li><a href="">SARA FRESH 블로그</a></li>
@@ -79,6 +88,8 @@
       <% break;
    } %>
   <!-- 페이지별로 다른 내용 들어감 -->
+</div>
+</div>
 
 <div class="footer-wrap">
   <footer>
@@ -99,6 +110,7 @@
     </div>
   </footer>
 </div>
+
 
 </body>
 </html>

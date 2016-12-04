@@ -1,0 +1,64 @@
+.header-wrap {
+  margin-top: 20px;
+  width: 100%;
+  padding-bottom: 10px; }
+
+.footer-wrap {
+  width: 100%; }
+
+.header-wrap header, .content-wrap, .footer-wrap footer {
+  width: 1200px;
+  background-color: silver;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  box-sizing: border-box; }
+  .header-wrap header::after, .content-wrap::after, .footer-wrap footer::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.logo-title {
+  float: left;
+  height: 40px;
+  width: 1200px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-bottom: 10px; }
+
+.search-banner {
+  float: right;
+  margin-top: 10px; }
+
+.sarafresh {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.content > nav {
+  float: left;
+  width: 200px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+.content {
+  display: flex;
+  flex-flow: row;
+  padding-top: 20px;
+  flex-direction: row; }
+
+.page-link {
+  float: left;
+  height: 100px;
+  width: 200px;
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 0; }
+
+/*# sourceMappingURL=grid.css.map */
