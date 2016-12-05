@@ -829,7 +829,7 @@ h4 {
   position: absolute;
   left: -9999px;
   width: 190px;
-  top: 298px;
+  top: 253px;
   background: white;
   padding: 10px;
   font-family: "nanum-barun-gothic-regular";
@@ -866,6 +866,13 @@ footer {
     color: gray;
     margin-bottom: 5px;
     margin-right: 15px; }
+
+.mainpage h4, .mainpage p {
+  text-align: center; }
+.mainpage p {
+  color: #64bf09;
+  font-family: "nanum-barun-gothic-bold";
+  font-size: 20px; }
 
 .slide {
   float: left;
@@ -920,19 +927,19 @@ footer {
   bottom: 20px; }
 
 .slick-1 {
-  background-color: #bfe0f6; }
+  background-color: #51f5fa; }
 
 .slick-2 {
-  background-color: #4e481a; }
+  background-color: #0ee633; }
 
 .slick-3 {
-  background-color: #f7cf4f; }
+  background-color: #8a5414; }
 
 .slick-4 {
-  background-color: #cc4b53; }
+  background-color: #d1f07e; }
 
 .slick-5 {
-  background-color: #2b041b; }
+  background-color: #0b1bf0; }
 
 .slick-1, .slick-2, .slick-3, .slick-4, .slick-5 {
   width: 840px;
@@ -952,11 +959,16 @@ footer {
 .delivery-region, .order-call {
   border-right: 1px solid #64bf09; }
 
-.mainpage h4, .mainpage p {
+.order-call img {
+  height: 80px;
+  width: auto;
+  float: left; }
+
+.billing-bank {
   text-align: center; }
-.mainpage p {
-  color: #64bf09;
-  font-family: "nanum-barun-gothic-bold";
-  font-size: 20px; }
+  .billing-bank img {
+    display: inline-block;
+    height: 200px;
+    width: auto; }
 
 /*# sourceMappingURL=style.css.map */
