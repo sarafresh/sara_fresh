@@ -742,7 +742,7 @@ h4 {
   margin-bottom: 10px; }
 
 .search-banner {
-  margin-top: 35px;
+  margin-top: 20px;
   float: right;
   height: 52px; }
 
@@ -770,7 +770,8 @@ h4 {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 0; }
+  margin-left: 0;
+  margin-top: 1px; }
 
 .content {
   display: flex;
@@ -872,7 +873,10 @@ footer {
 .mainpage p {
   color: #64bf09;
   font-family: "nanum-barun-gothic-bold";
-  font-size: 20px; }
+  font-size: 17px; }
+.mainpage h5 {
+  font-family: "nanum-barun-gothic-bold";
+  font-size: 17px; }
 
 .slide {
   float: left;
@@ -927,19 +931,19 @@ footer {
   bottom: 20px; }
 
 .slick-1 {
-  background-color: #51f5fa; }
+  background-color: #1f73a5; }
 
 .slick-2 {
-  background-color: #0ee633; }
+  background-color: #ce96d1; }
 
 .slick-3 {
-  background-color: #8a5414; }
+  background-color: #dc24bc; }
 
 .slick-4 {
-  background-color: #d1f07e; }
+  background-color: #254aab; }
 
 .slick-5 {
-  background-color: #0b1bf0; }
+  background-color: #256cb2; }
 
 .slick-1, .slick-2, .slick-3, .slick-4, .slick-5 {
   width: 840px;
@@ -955,6 +959,10 @@ footer {
 
 .delivery-region, .order-call, .billing-bank {
   margin-top: 20px; }
+  .delivery-region h4, .order-call h4, .billing-bank h4 {
+    margin-bottom: 10px; }
+  .delivery-region p, .order-call p, .billing-bank p {
+    line-height: 1.3em; }
 
 .delivery-region, .order-call {
   border-right: 1px solid #64bf09; }
@@ -963,12 +971,104 @@ footer {
   height: 80px;
   width: auto;
   float: left; }
+.order-call > p {
+  line-height: 1.5em; }
+.order-call .phone-number {
+  padding-top: 10px; }
 
 .billing-bank {
   text-align: center; }
+  .billing-bank p {
+    line-height: 1.4em; }
   .billing-bank img {
+    margin-top: 15px;
     display: inline-block;
     height: 200px;
     width: auto; }
+
+.delivery-region img {
+  width: 95%;
+  height: auto; }
+
+.avail-time {
+  background: url("/public/resources/images/img/iphone.png") no-repeat;
+  background-size: auto 100%;
+  padding-left: 65px;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  margin-left: 15px;
+  margin-top: 10px;
+  margin-bottom: 25px; }
+  .avail-time h5, .avail-time p {
+    margin-bottom: 8px;
+    text-align: left; }
+  .avail-time time {
+    font-family: "nanum-barun-gothic-bold";
+    font-size: 25.5px; }
+
+h2 {
+  font-size: 42.5px;
+  font-family: "nanum-barun-gothic-bold"; }
+
+.about-sarafood {
+  padding-left: 30px; }
+  .about-sarafood span {
+    font-family: "nanum-barun-gothic-bold"; }
+
+h2 {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #68c110;
+  margin-bottom: 10px; }
+
+.about-sarafood > a {
+  text-decoration: underline;
+  font-family: "nanum-barun-gothic-regular"; }
+.about-sarafood > span {
+  font-family: "nanum-barun-gothic-bold"; }
+.about-sarafood > span, .about-sarafood > a {
+  color: gray;
+  font-size: 15px; }
+
+.what-is-sarafood {
+  padding: 20px 20px 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  border-top: 1px solid #68c110;
+  border-bottom: 1px solid #68c110; }
+  .what-is-sarafood img {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-bottom: 20px; }
+  .what-is-sarafood p {
+    padding-left: 15px;
+    float: left;
+    font-family: "nanum-barun-gothic-bold";
+    font-size: 34px;
+    line-height: 3em; }
+  .what-is-sarafood::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+.clean-kitchen {
+  text-align: center; }
+  .clean-kitchen div {
+    margin-bottom: 50px; }
+  .clean-kitchen h4 {
+    display: inline-block;
+    background: url("/public/resources/images/iconui/cook.jpg") no-repeat;
+    background-size: auto 100%;
+    line-height: 2em;
+    padding-top: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 25.5px;
+    font-family: "nanum-barun-gothic-bold"; }
+  .clean-kitchen p {
+    font-family: "nanum-barun-gothic-bold";
+    font-size: 25px;
+    color: gray;
+    padding-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */
