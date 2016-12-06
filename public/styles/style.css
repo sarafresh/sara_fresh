@@ -931,19 +931,19 @@ footer {
   bottom: 20px; }
 
 .slick-1 {
-  background-color: #1f73a5; }
+  background-color: #218d13; }
 
 .slick-2 {
-  background-color: #ce96d1; }
+  background-color: #c105c3; }
 
 .slick-3 {
-  background-color: #dc24bc; }
+  background-color: #8771ef; }
 
 .slick-4 {
-  background-color: #254aab; }
+  background-color: #f682ae; }
 
 .slick-5 {
-  background-color: #256cb2; }
+  background-color: #a3eea5; }
 
 .slick-1, .slick-2, .slick-3, .slick-4, .slick-5 {
   width: 840px;
@@ -1051,13 +1051,38 @@ h2 {
     display: block;
     clear: both; }
 
-.clean-kitchen {
+.clean-kitchen h4 {
+  background: url("/public/resources/images/iconui/cook.jpg") no-repeat; }
+
+.take-out h4 {
+  background: url("/public/resources/images/iconui/service_icon.png") no-repeat; }
+
+.take-out {
+  margin-top: 100px; }
+
+.service-title {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 42.5px;
+  font-family: "nanum-barun-gothic-bold"; }
+
+.service-discription {
+  font-size: 35px;
+  color: black;
+  font-family: "nanum-barun-gothic-bold"; }
+
+.service-detail {
+  font-size: 25.5px;
+  color: black;
+  font-family: "nanum-barun-gothic-bold";
+  margin-bottom: 50px; }
+
+.clean-kitchen, .take-out {
   text-align: center; }
-  .clean-kitchen div {
+  .clean-kitchen div, .take-out div {
     margin-bottom: 50px; }
-  .clean-kitchen h4 {
+  .clean-kitchen h4, .take-out h4 {
     display: inline-block;
-    background: url("/public/resources/images/iconui/cook.jpg") no-repeat;
     background-size: auto 100%;
     line-height: 2em;
     padding-top: 20px;
@@ -1065,7 +1090,7 @@ h2 {
     padding-right: 80px;
     font-size: 25.5px;
     font-family: "nanum-barun-gothic-bold"; }
-  .clean-kitchen p {
+  .clean-kitchen p, .take-out p {
     font-family: "nanum-barun-gothic-bold";
     font-size: 25px;
     color: gray;
