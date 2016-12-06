@@ -1,7 +1,7 @@
 {
   "name": "sarafresh_web",
-  "version": "0.0.1",
-  "description": "nodejs router+ejs vie engine for sarafresh",
+  "version": "1.0.0",
+  "description": "nodejs router+ejs engine for sarafresh",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
