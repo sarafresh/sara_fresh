@@ -1,0 +1,120 @@
+@charset "UTF-8"
+@import ./modules/__font.sass
+@import ./modules/__grid.sass
+@import ./initiate/__normalize.scss
+@import ./initiate/__reset.scss
+//캐러셀을 위한 슬릭//
+@import ../lib/slick/slick.scss
+@import ../lib/slick/slick-theme.scss
+
+///////// debugging setting /////////////$Recycle.Bin
+html
+  // background-color: gray
+
+///////// common module setting ////////////
+.readable-hidden
+  position: absolute
+  left: -9999px
+
+=alignCenter()
+  display: flex
+  justify-content: center
+  align-items: center
+
+=nanumBold($font_size:0)
+  font:
+    family: 'nanum-barun-gothic-bold'
+    @if $font_size>0
+      size: $font_size
+
+=nanumRegular($font_size)
+  font:
+    family: 'nanum-barun-gothic-regular'
+    @if $font_size>0
+      size: $font_size
+
+/////////// common style setting //////////////
+
+img
+  -ms-interpolation-mode: bicubic
+li
+  list-style: none
+ul
+  padding-left: 0
+a
+  text-decoration: none
+  color: inherit
+
+.red
+  color: red
+.green
+  color: #57aa4a
+.bright-green
+  color: #64bf09
+.yellow
+  color: #e3a326
+.gray
+  color: gray
+.black
+  color: black
+
+.about-sarafood, .about-sarafresh, .delivery-process,.menus-page ,.group-order
+  padding-left: 30px
+  font-family: 'nanum-barun-gothic-bold'
+
+//////////// setting ui /////////////////////
+span
+  family: 'nanum-barun-gothic-bold'
+
+
+h1
+  font:
+    family: 'nanum-barun-gothic-bold'
+    size: 38px
+
+h2
+  padding-bottom: 5px
+  border-bottom: 1px solid #68c110
+  margin-bottom: 10px
+  font-size: 42.5px
+  font-family: 'nanum-barun-gothic-bold'
+
+h3
+  font:
+    family: 'nanum-barun-gothic-bold'
+    size: 41px
+
+h4
+  font:
+    family: 'nanum-barun-gothic-bold'
+    size: 25.5px
+
+.sitemap
+  text-decoration: underline
+  font-family: 'nanum-barun-gothic-regular'
+  color: gray
+  font-size: 15px
+
+.dot-title
+  text-align: center
+  span
+    display: block
+    margin-bottom: 20px
+  h4
+    // background: url('/public/resources/images/iconui/truck_icon.png') no-repeat
+    // background-size: auto 100%
+    line-height: 2em
+    padding: 0 80px
+    display: inline-block
+
+.center
+  text-align: center
+
+///////// import other pages ///////////////
+@import ./partial_pages/__layout_style.sass
+@import ./partial_pages/__main_style.sass
+@import ./partial_pages/__about_sarafood.sass
+@import ./partial_pages/__about_sarafresh.sass
+@import ./partial_pages/__group_order.sass
+@import ./partial_pages/__delivery_process.sass
+@import ./partial_pages/__menus.sass

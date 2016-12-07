@@ -1,0 +1,122 @@
+@charset "UTF-8"
+
+/////////////모듈//////////////
+=boxSet()
+  box-sizing: border-box
+  border: 1px solid white
+
+///////////// main 전역 세팅 ///////////////
+.mainpage
+  h4,p
+    text-align: center
+  p
+    color: #64bf09
+    font-family: 'nanum-barun-gothic-bold'
+    font-size: 17px
+  h5
+    font-family: 'nanum-barun-gothic-bold'
+    font-size: 17px
+
+/////////////////////////// 크기세팅 ///////////////////////////////
+.slide
+  +boxSize(6.4,510)
+  +boxSet()
+  overflow: hidden
+
+.how-to-order-mainlink, .kakao-contact-id
+  +boxSize(2.6,255)
+  +boxSet()
+
+.billing-bank
+  +boxSize(2.6,300)
+  +boxSet()
+
+.delivery-region, .order-call
+  +boxSize(3.2,300)
+  +boxSet()
+
+.slide-slick
+  width: 100%
+  height: 100%
+.slick-dots
+  bottom: 20px
+
+
+///////////////////////////// 디자인 //////////////////////////////
+//슬라이더 예시
+.slick-1
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+.slick-2
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+.slick-3
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+.slick-4
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+.slick-5
+  background-color: rgb(random(255)-1,random(255)-1,random(255)-1)
+.slick-1,.slick-2,.slick-3,.slick-4,.slick-5
+  width: 840px
+  height: 510px
+
+//우측 2개 칸
+.how-to-order-mainlink
+  background: url("/public/resources/images/img/how_to_order.png") no-repeat
+  background-size: cover
+.kakao-contact-id
+  background: url("/public/resources/images/img/kakao-contact-id.png") no-repeat
+  background-size: cover
+
+//하단 3개칸
+.delivery-region, .order-call, .billing-bank
+  margin-top: 20px
+  h4
+    margin-bottom: 10px
+  p
+    line-height: 1.3em
+.delivery-region, .order-call
+  border-right: 1px solid #64bf09
+.order-call
+  img
+    height: 80px
+    width: auto
+    float: left
+  >p
+    line-height: 1.5em
+  .phone-number
+    padding-top: 10px
+
+
+.billing-bank
+  text-align: center
+  p
+    line-height: 1.4em
+  img
+    margin-top: 15px
+    display: inline-block
+    height: 200px
+    width: auto
+
+.delivery-region img
+  width: 85%
+  height: auto
+  margin:
+    top: 10px
+    left: 20px
+
+.avail-time
+  background: url("/public/resources/images/img/iphone.png") no-repeat
+  background-size: auto 100%
+  padding:
+    left: 65px
+    top: 15px
+    bottom: 10px
+  margin:
+    left: 15px
+    top: 10px
+    bottom: 25px
+  h5, p
+    margin-bottom: 8px
+    text-align: left
+  time
+    font-family: 'nanum-barun-gothic-bold'
+    font-size: 25.5px

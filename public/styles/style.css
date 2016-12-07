@@ -772,6 +772,10 @@ table {
   left: -9999px;
 }
 
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
 li {
   list-style: none;
 }
@@ -1035,6 +1039,9 @@ h4 {
   z-index: 9999;
 }
 
+main {
+  width: 990px;
+}
 main img {
   width: 100%;
 }
@@ -1058,6 +1065,7 @@ footer li {
   float: left;
   font-family: "nanum-barun-gothic-regular";
   font-size: 10px;
+  letter-spacing: -1px;
   color: gray;
   margin-bottom: 5px;
   margin-right: 15px;
@@ -1135,28 +1143,28 @@ footer li {
 }
 
 .slick-1 {
-  background-color: #aed36c;
+  background-color: #274de8;
 }
 
 .slick-2 {
-  background-color: #8315e3;
+  background-color: #2eb0bc;
 }
 
 .slick-3 {
-  background-color: #07e850;
+  background-color: #a2fbe2;
 }
 
 .slick-4 {
-  background-color: #f7e789;
+  background-color: #772a69;
 }
 
 .slick-5 {
-  background-color: #09957e;
+  background-color: #36bcc1;
 }
 
 .slick-1, .slick-2, .slick-3, .slick-4, .slick-5 {
   width: 840px;
-  height: 600px;
+  height: 510px;
 }
 
 .how-to-order-mainlink {
@@ -1209,10 +1217,10 @@ footer li {
 }
 
 .delivery-region img {
-  width: 75%;
+  width: 85%;
   height: auto;
-  margin-top: 15px;
-  margin-left: 43px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 .avail-time {
