@@ -1143,23 +1143,23 @@ footer li {
 }
 
 .slick-1 {
-  background-color: #274de8;
+  background-color: #1109ba;
 }
 
 .slick-2 {
-  background-color: #2eb0bc;
+  background-color: #888938;
 }
 
 .slick-3 {
-  background-color: #a2fbe2;
+  background-color: #bb9ab6;
 }
 
 .slick-4 {
-  background-color: #772a69;
+  background-color: #6b2fb3;
 }
 
 .slick-5 {
-  background-color: #36bcc1;
+  background-color: #9df2af;
 }
 
 .slick-1, .slick-2, .slick-3, .slick-4, .slick-5 {
@@ -1577,7 +1577,7 @@ h2 {
 .with-soccer-team .soccer-left {
   float: left;
   width: 44%;
-  height: 99.3%;
+  height: 99.6%;
 }
 .with-soccer-team .soccer-right {
   padding-left: 5px;
