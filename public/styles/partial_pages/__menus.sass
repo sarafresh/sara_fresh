@@ -1,180 +1,181 @@
 @charset "UTF-8"
 
+
+// 12/14 요청으로 삭제
 //////////// 모듈 ///////////////////////
-
-=bgImgTitle($filename,$r,$g,$b,$a:0.8)
-  background: url('/public/resources/images/img/'+$filename) no-repeat
-  background-size: 100% auto
-  width: 100%
-  height: 300px
-  position: relative
-  margin-bottom: 50px
-  div
-    text-align: left
-    width: 50%
-    height: 40%
-    position: absolute
-    bottom: 20px
-    background-color: rgba($r,$g,$b,$a)
-    padding: 20px
-    h4
-      font-size: 41px
-      margin-top: 10px
-      margin-bottom: 10px
-    p
-      font-size: 27.5px
-      color: #fff
-      line-height: 1.2em
-
-
-
-//상단 제목
-.what-is-menu
-  padding: 35px 0
-  margin-top: 90px
-  border:
-    top: 1px solid #68c110
-    bottom: 1px solid #68c110
-  img
-    height: 70px
-    width: auto
-    float: left
-    margin-left: 20px
-    position: relative
-    top: -5px
-  p
-    padding-left: 15px
-    float: left
-    font-family: 'nanum-barun-gothic-bold'
-    font-size: 34px
-    line-height: 1.2em
-    &.upper
-      position: relative
-      top: 23px
-  &::after
-    content: ""
-    display: block
-    clear: both
-
-//제목줄 하단 링크
-.menu-quicklink
-  text-align: center
-  margin: 0 auto
-  li
-    display: inline-block
-    margin: 0 20px
-    margin-top: 10px
-  a
-    color: gray
-    text-decoration: underline
-    font-size: 18.5px
-
-//밥도시락 메뉴
-.category-meal .dot-title
-  margin: 150px 0
-  h4
-    background: url('/public/resources/images/iconui/meal_icon.png') no-repeat
-    background-size: auto 100%
-
-//각 메뉴별 구간띄움
-.menus-page
-  article
-    margin:
-      bottom: 200px
-
-
-//타이틀 정의
-#meal_big header
-  +bgImgTitle('meal_big_titlebg.jpg',243,165,15)
-#meal_small header
-  +bgImgTitle('meal_small_titlebg.jpg',243,165,15)
-  div
-    width: 70%
-#meal_child header
-  +bgImgTitle('meal_child_titlebg.jpg',243,165,15)
-  div
-    width: 60%
-    height: 55%
-#salad header
-  +bgImgTitle('salad_titlebg.jpg',243,165,15,0.9)
-  div
-    width: 40%
-    height: 41%
-#mix header
-  +bgImgTitle('mix_titlebg.jpg',243,165,15)
-  div
-    width: 74%
-  margin-bottom: 0
-
-//샐러드 메뉴 타이틀
-.category-salad .dot-title
-  margin: 150px 0
-  padding-top: 50px
-  border-top: 1px solid #68c110
-  h4
-    padding: 0 10px
-  img
-    width: 90px
-    height: auto
-    position: relative
-    top: 20px
-  div
-    display: inline-block
-#salad .upper
-  margin-bottom: 100px
-
-// 믹스 메뉴 타이틀
-.category-mix .dot-title
-  margin:
-    top: 0
-    bottom: 0
-  padding-top: 100px
-  border-top: 1px solid #68c110
-  .mix-title
-    display: inline-block
-    position: relative
-    top: -50px
-    span
-      margin-bottom: 30px
-    h4
-      padding-left: 20px
-      padding-right: 0
-  .mix-icons
-    display: inline-block
-    width: 100px
-    img
-      width: 100%
-      height: auto
-.category-mix
-  &>img
-    margin-bottom: 50px
-  margin-bottom: 20px
-
-//믹스메뉴 조금 내리고 싶었음.
-#mix
-  position: relative
-  top: 150px
-
-
-
-  ///푸터
-.menus-page footer
-  padding: 10px 10px 10px 30px
-  background-color: #57aa4a
-  height: 50px
-  margin-bottom: 30px
-  p
-    position: relative
-    &::before
-      content: '※'
-      color: red
-      position: absolute
-      left: -20px
-    line-height: 1.2em
-    +nanumRegular(20px)
-    color: white
-    span
-      +nanumBold(20px)
-      color: black
-      border-bottom: 1px solid black
-      padding-right: 0
+// =bgImgTitle($filename,$r,$g,$b,$a:0.8)
+//   background: url('/public/resources/images/img/'+$filename) no-repeat
+//   background-size: 100% auto
+//   width: 100%
+//   height: 300px
+//   position: relative
+//   margin-bottom: 50px
+//   div
+//     text-align: left
+//     width: 50%
+//     height: 40%
+//     position: absolute
+//     bottom: 20px
+//     background-color: rgba($r,$g,$b,$a)
+//     padding: 20px
+//     h4
+//       font-size: 41px
+//       margin-top: 10px
+//       margin-bottom: 10px
+//     p
+//       font-size: 27.5px
+//       color: #fff
+//       line-height: 1.2em
+//
+//
+//
+// //상단 제목
+// .what-is-menu
+//   padding: 35px 0
+//   margin-top: 90px
+//   border:
+//     top: 1px solid #68c110
+//     bottom: 1px solid #68c110
+//   img
+//     height: 70px
+//     width: auto
+//     float: left
+//     margin-left: 20px
+//     position: relative
+//     top: -5px
+//   p
+//     padding-left: 15px
+//     float: left
+//     font-family: 'nanum-barun-gothic-bold'
+//     font-size: 34px
+//     line-height: 1.2em
+//     &.upper
+//       position: relative
+//       top: 23px
+//   &::after
+//     content: ""
+//     display: block
+//     clear: both
+//
+// //제목줄 하단 링크
+// .menu-quicklink
+//   text-align: center
+//   margin: 0 auto
+//   li
+//     display: inline-block
+//     margin: 0 20px
+//     margin-top: 10px
+//   a
+//     color: gray
+//     text-decoration: underline
+//     font-size: 18.5px
+//
+// //밥도시락 메뉴
+// .category-meal .dot-title
+//   margin: 150px 0
+//   h4
+//     background: url('/public/resources/images/iconui/meal_icon.png') no-repeat
+//     background-size: auto 100%
+//
+// //각 메뉴별 구간띄움
+// .menus-page
+//   article
+//     margin:
+//       bottom: 200px
+//
+//
+// //타이틀 정의
+// #meal_big header
+//   +bgImgTitle('meal_big_titlebg.jpg',243,165,15)
+// #meal_small header
+//   +bgImgTitle('meal_small_titlebg.jpg',243,165,15)
+//   div
+//     width: 70%
+// #meal_child header
+//   +bgImgTitle('meal_child_titlebg.jpg',243,165,15)
+//   div
+//     width: 60%
+//     height: 55%
+// #salad header
+//   +bgImgTitle('salad_titlebg.jpg',243,165,15,0.9)
+//   div
+//     width: 40%
+//     height: 41%
+// #mix header
+//   +bgImgTitle('mix_titlebg.jpg',243,165,15)
+//   div
+//     width: 74%
+//   margin-bottom: 0
+//
+// //샐러드 메뉴 타이틀
+// .category-salad .dot-title
+//   margin: 150px 0
+//   padding-top: 50px
+//   border-top: 1px solid #68c110
+//   h4
+//     padding: 0 10px
+//   img
+//     width: 90px
+//     height: auto
+//     position: relative
+//     top: 20px
+//   div
+//     display: inline-block
+// #salad .upper
+//   margin-bottom: 100px
+//
+// // 믹스 메뉴 타이틀
+// .category-mix .dot-title
+//   margin:
+//     top: 0
+//     bottom: 0
+//   padding-top: 100px
+//   border-top: 1px solid #68c110
+//   .mix-title
+//     display: inline-block
+//     position: relative
+//     top: -50px
+//     span
+//       margin-bottom: 30px
+//     h4
+//       padding-left: 20px
+//       padding-right: 0
+//   .mix-icons
+//     display: inline-block
+//     width: 100px
+//     img
+//       width: 100%
+//       height: auto
+// .category-mix
+//   &>img
+//     margin-bottom: 50px
+//   margin-bottom: 20px
+//
+// //믹스메뉴 조금 내리고 싶었음.
+// #mix
+//   position: relative
+//   top: 150px
+//
+//
+//
+//   ///푸터
+// .menus-page footer
+//   padding: 10px 10px 10px 30px
+//   background-color: #57aa4a
+//   height: 50px
+//   margin-bottom: 30px
+//   p
+//     position: relative
+//     &::before
+//       content: '※'
+//       color: red
+//       position: absolute
+//       left: -20px
+//     line-height: 1.2em
+//     +nanumRegular(20px)
+//     color: white
+//     span
+//       +nanumBold(20px)
+//       color: black
+//       border-bottom: 1px solid black
+//       padding-right: 0

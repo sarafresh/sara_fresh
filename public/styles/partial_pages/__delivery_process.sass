@@ -1,160 +1,167 @@
 @charset "UTF-8"
-
-////////////// common ui ////////////////////
-
-//1.주문하기
-.delivery-process .title-set
-  img
-    width: 185px
-    height: auto
-  h3
-    font-size: 42.5px
-    line-height: 2.5em
-  p
-    font-size: 34px
-    line-height: 1.2em
-    font-family: 'nanum-barun-gothic-regular'
-  span
-    font-size: 25.5px
-    line-height: 1.5em
-    font-family: 'nanum-barun-gothic-regular'
-
-.delivery-process
-  h4
-    line-height: 2em
-    font-size: 34px
-
-//3번
-.detail-discription
-  span
-    font-size: 25.5px
-    line-height: 2em
-    font-family: 'nanum-barun-gothic-regular'
-  p
-    font-size: 22px
-    line-height: 1.2em
-    font-family: 'nanum-barun-gothic-regular'
-////////////////// design /////////////////
-
-//1.주문하기
-.how-to-order
-  margin-top : 200px
-  .title-set
-    margin-bottom: 100px
-  .cart-icon
-    margin-left: 30px
-  >h4
-    border-bottom: 1px solid #68c110
-    display: inline-block
-    margin-bottom: 60px
-
-.order-addinfo
-  p
-    line-height: 2.5em
-    font-size: 24px
-    display: inline-block
-  margin-bottom: 60px
-
-  .cacao-id
-    background: url("/public/resources/images/iconui/kakaotalk.png") no-repeat
-    background-size: auto 100%
-    padding-right: 50px
-    padding-left: 70px
-    color: #523636
-
-  .sms
-    background: url("/public/resources/images/iconui/sms_icon.png") no-repeat
-    background-size: auto 90%
-    background-position: left
-    padding-left: 60px
-    color: #57aa4a
-
-.order-sheet
-  margin-left: 30px
-  padding-left: 345px
-  background: url("/public/resources/images/img/kakaotalk_iphone_white.png") no-repeat
-  background-size: auto 85%
-  text-align: left
-  h4
-    line-height: 1.5em
-    margin-top: 10px
-  p
-    position: relative
-    line-height: 1.5em
-    font-size: 21px
-  .red
-    padding-left: 20px
-    margin-left: 20px
-    &::before
-      content: "※"
-      position: absolute
-      left: -5px
-  padding-bottom: 100px
-  border-bottom: 1px solid #68c110
-
-
-//2. 배송방법
-.delivery
-  margin-top: 100px
-  .title-set
-    margin-bottom: 70px
-    .green
-      font-size: 34px
-      font-family: 'nanum-barun-gothic-regular'
-
-.delivery .detail-discription
-  margin-top: 20px
-  p
-    margin-top: 10px
-  padding-bottom: 100px
-  border-bottom: 1px solid #68c110
-
-
-//3. 상쾌한 아침
-.refresh
-  .title-set
-    margin:
-      top: 100px
-      bottom: 100px
-  h4
-    font-size: 25.5px
-    line-height: 2em
-    font-family: 'nanum-barun-gothic-regular'
-.with-soccer-team
-  width: 100%
-  height: 800px
-  margin-bottom: 100px
-  &::after
-    content: ""
-    display: block
-    clear: both
-  p
-    font-size: 25.5px
-    line-height: 2em
-    font-family: 'nanum-barun-gothic-bold'
-    padding-bottom: 100px
-    border-bottom: 1px solid #68c110
-  .soccer-left
-    float: left
-    width: 44%
-    height: 99.6%
-  .soccer-right
-    padding-left: 5px
-    float: left
-    width: 55%
-    height: 100%
-
-
-//4 배송방법, 연장
-.refresh2
-  margin-bottom: 30px
-  margin-top: 230px
-  .detail-discription
-    p
-      font-size: 25.5px
-      line-height: 1.5em
-      font-family: 'nanum-barun-gothic-bold'
-    .red
-      margin:
-        top: 40px
-        bottom: 40px
+// 12/14 요청으로 변경
+#order_sheet
+  //작은 div로 주문방법 위치 설정위해 사용
+  width: 10px
+  height: 10px
+  position: absolute
+  top: 1000px
+  // background: tomato
+// ////////////// common ui ////////////////////
+//
+// //1.주문하기
+// .delivery-process .title-set
+//   img
+//     width: 185px
+//     height: auto
+//   h3
+//     font-size: 42.5px
+//     line-height: 2.5em
+//   p
+//     font-size: 34px
+//     line-height: 1.2em
+//     font-family: 'nanum-barun-gothic-regular'
+//   span
+//     font-size: 25.5px
+//     line-height: 1.5em
+//     font-family: 'nanum-barun-gothic-regular'
+//
+// .delivery-process
+//   h4
+//     line-height: 2em
+//     font-size: 34px
+//
+// //3번
+// .detail-discription
+//   span
+//     font-size: 25.5px
+//     line-height: 2em
+//     font-family: 'nanum-barun-gothic-regular'
+//   p
+//     font-size: 22px
+//     line-height: 1.2em
+//     font-family: 'nanum-barun-gothic-regular'
+// ////////////////// design /////////////////
+//
+// //1.주문하기
+// .how-to-order
+//   margin-top : 200px
+//   .title-set
+//     margin-bottom: 100px
+//   .cart-icon
+//     margin-left: 30px
+//   >h4
+//     border-bottom: 1px solid #68c110
+//     display: inline-block
+//     margin-bottom: 60px
+//
+// .order-addinfo
+//   p
+//     line-height: 2.5em
+//     font-size: 24px
+//     display: inline-block
+//   margin-bottom: 60px
+//
+//   .cacao-id
+//     background: url("/public/resources/images/iconui/kakaotalk.png") no-repeat
+//     background-size: auto 100%
+//     padding-right: 50px
+//     padding-left: 70px
+//     color: #523636
+//
+//   .sms
+//     background: url("/public/resources/images/iconui/sms_icon.png") no-repeat
+//     background-size: auto 90%
+//     background-position: left
+//     padding-left: 60px
+//     color: #57aa4a
+//
+// .order-sheet
+//   margin-left: 30px
+//   padding-left: 345px
+//   background: url("/public/resources/images/img/kakaotalk_iphone_white.png") no-repeat
+//   background-size: auto 85%
+//   text-align: left
+//   h4
+//     line-height: 1.5em
+//     margin-top: 10px
+//   p
+//     position: relative
+//     line-height: 1.5em
+//     font-size: 21px
+//   .red
+//     padding-left: 20px
+//     margin-left: 20px
+//     &::before
+//       content: "※"
+//       position: absolute
+//       left: -5px
+//   padding-bottom: 100px
+//   border-bottom: 1px solid #68c110
+//
+//
+// //2. 배송방법
+// .delivery
+//   margin-top: 100px
+//   .title-set
+//     margin-bottom: 70px
+//     .green
+//       font-size: 34px
+//       font-family: 'nanum-barun-gothic-regular'
+//
+// .delivery .detail-discription
+//   margin-top: 20px
+//   p
+//     margin-top: 10px
+//   padding-bottom: 100px
+//   border-bottom: 1px solid #68c110
+//
+//
+// //3. 상쾌한 아침
+// .refresh
+//   .title-set
+//     margin:
+//       top: 100px
+//       bottom: 100px
+//   h4
+//     font-size: 25.5px
+//     line-height: 2em
+//     font-family: 'nanum-barun-gothic-regular'
+// .with-soccer-team
+//   width: 100%
+//   height: 800px
+//   margin-bottom: 100px
+//   &::after
+//     content: ""
+//     display: block
+//     clear: both
+//   p
+//     font-size: 25.5px
+//     line-height: 2em
+//     font-family: 'nanum-barun-gothic-bold'
+//     padding-bottom: 100px
+//     border-bottom: 1px solid #68c110
+//   .soccer-left
+//     float: left
+//     width: 44%
+//     height: 99.6%
+//   .soccer-right
+//     padding-left: 5px
+//     float: left
+//     width: 55%
+//     height: 100%
+//
+//
+// //4 배송방법, 연장
+// .refresh2
+//   margin-bottom: 30px
+//   margin-top: 230px
+//   .detail-discription
+//     p
+//       font-size: 25.5px
+//       line-height: 1.5em
+//       font-family: 'nanum-barun-gothic-bold'
+//     .red
+//       margin:
+//         top: 40px
+//         bottom: 40px
