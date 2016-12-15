@@ -10,7 +10,7 @@ whenActived('.layout-menu-nav','.menu-sub','submenu-active')
 jQuery(document).ready(function(){
   jQuery('.slide-slick').slick({
     'autoplay': true,
-    'autoplaySpeed': 1000,
+    'autoplaySpeed': 3000,
     'dots': true,
     'arrows': false
   });
